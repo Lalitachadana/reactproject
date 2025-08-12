@@ -16,7 +16,7 @@ export default function WorkingHours() {
           value={value}
           size={120}
           thickness={5}
-          sx={{ color: "#1976d2" }}
+          sx={{ color: "blue" }}
         />
 
         <Box
@@ -38,5 +38,6 @@ export default function WorkingHours() {
         Working hours calculated based on your activity
       </Typography>
     </Paper>
+    
   );
 }

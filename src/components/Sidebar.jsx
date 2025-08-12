@@ -1,21 +1,23 @@
 import React from "react";
 import {
   Drawer,
-  List,
-  ListItem,
+     List,
+   ListItem,
   ListItemIcon,
   Tooltip,
 } from "@mui/material";
+
+
 import {
   Home,
   Settings,
-  Dashboard as DashboardIcon,
-  AccountCircle,
-  Notifications,
+   Dashboard as DashboardIcon,
+    AccountCircle,
+   Notifications,
   Mail,
   BarChart,
   HelpOutline,
-  ExitToApp,
+   ExitToApp,
 } from "@mui/icons-material";
 
 const iconSidebarItems = [
@@ -39,11 +41,16 @@ const Sidebar = ({ open, setOpen }) => {
         flexShrink: 0,
         "& .MuiDrawer-paper": {
           width: open ? 200 : 70,
-          boxSizing: "border-box",
+            boxSizing: "border-box",
           backgroundColor: "white",
           color: "black",
         },
-      }}
+      }}    
+
+
+
+
+
     >
       <List>
         {iconSidebarItems.map((item, index) => (
@@ -51,10 +58,18 @@ const Sidebar = ({ open, setOpen }) => {
             title={!open ? item.label : ""}
             placement="right"
             key={index}
+
+
+
+
+
           >
             <ListItem button onClick={() => setOpen(!open)}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               {open && <span>{item.label}</span>}
+
+
+              
             </ListItem>
           </Tooltip>
         ))}
